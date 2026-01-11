@@ -1,0 +1,7 @@
+{
+  "name": "AgriVoix Burkina",
+  "description": "Assistant agricole numérique pour les producteurs du Burkina Faso, conçu pour la simplicité et l'accessibilité vocale.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

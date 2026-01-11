@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>AgriVoix Burkina - Conseiller Agricole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --agri-green: #2D5A27;
+            --agri-green-light: #4A7A3F;
+            --agri-earth: #8B4513;
+            --agri-sand: #F4EBD0;
+            --agri-clay: #D2691E;
+            --agri-bg: #FCF9F2;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--agri-bg);
+            color: #1A1C1E;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand-font {
+            font-family: 'Fraunces', serif;
+        }
+
+        /* Tissage Traditionnel en filigrane */
+        .pattern-bg {
+            background-image: 
+                linear-gradient(rgba(45, 90, 39, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(45, 90, 39, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .assistant-card {
+            background: white;
+            border: 1px solid #E5E1D8;
+            border-radius: 24px 24px 24px 8px;
+            box-shadow: 0 10px 30px -10px rgba(45, 90, 39, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .user-bubble {
+            background: linear-gradient(135deg, var(--agri-green), var(--agri-green-light));
+            color: white;
+            border-radius: 24px 24px 8px 24px;
+            box-shadow: 0 8px 20px -5px rgba(45, 90, 39, 0.3);
+        }
+
+        /* Pulse sonore amélioré */
+        .voice-ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.4);
+            animation: ripple-out 1.5s infinite;
+        }
+
+        @keyframes ripple-out {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+
+        /* Scrollbar élégante */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #D7C9AA; border-radius: 10px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="pattern-bg">
+    <div id="root"></div>
+</body>
+</html>
